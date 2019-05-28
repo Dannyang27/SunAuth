@@ -28,10 +28,7 @@ public class SunAuth {
                 SimplePDP simplePDP = new SimplePDP(pathPolicies);
                 String requestFile = pathToRequestFile + requestNumber + ".xml";
                 ResponseCtx response = simplePDP.evaluate(requestFile);
-
-                String pathToSave = pathToSaveFile + "Policy" + policyNumber + "Request" + requestNumber + ".xml";
-                OutputStream outputStream = new FileOutputStream(pathToSave);
-                Utils.printResult(outputStream, new Indenter(), response.getResults());
+                Utils.printResult(System.out, new Indenter(), response.getResults());
             }
         }
     }
