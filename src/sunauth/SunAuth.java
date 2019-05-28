@@ -10,7 +10,6 @@ public class SunAuth {
 
     private static final String pathToPolicyFile = "src/resources/policy/XACMLPolicy";
     private static final String pathToRequestFile = "src/resources/request/XACMLRequest";
-    private static final String pathToSaveFile = "src/resources/outputs/XACML";
 
     public static void main(String args[]) throws Exception {
         Scanner scanner = new Scanner(System.in);
